@@ -1,0 +1,43 @@
+1.创建git用户
+	git config --global user.name '名字'		#给计算机用户设置名字
+	git config --global user.email '邮箱'		#给计算机用户设置邮箱
+		生成配置文件C:\Users\Administrator\.gitconfig
+	
+	git config --global --unset user.name		#删除计算机用户名字
+	git config --global --unset user.email		#删除计算机用户邮箱
+	
+	
+	git config --system user.name '名字'		#给系统用户设置名字
+	git config --system user.email '邮箱'		#给系统用户设置邮箱
+		生成配置文件  安装盘符\Git\etc\gitconfig
+	
+	git config --system --unset user.name		#删除系统用户名字
+	git config --system --unset user.email		#删除系统用户邮箱
+
+
+
+
+2.工作区->暂存区->版本区/资源区
+	git init						#创建工作区
+	git add 文件名					#往暂存区里上传指定文件（git add .   是上传当前路径的所以文件）
+	git status						#查看git状态
+	git commit -m '备注的信息'		#把暂存区里的文件上传到版本区/资源区
+	git log							#查看全部提交日志（commit：562a75be2253d0c95d81b2589da08e511ca378ae为生产的ID）
+	git log -2						#只查看最新两次的日志信息
+	
+3.版本区->远程库
+	git push -u origin master		#发布项目
+	git push origin master			#提交文件
+	
+	git clone 远程项目地址			#克隆文件到本地
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
